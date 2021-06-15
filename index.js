@@ -7,7 +7,10 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const WorkboxPlugin = require("workbox-webpack-plugin");
 
 const getRevision = (file) =>
-  crypto.createHash("md5").update(Buffer.from(fs.readFileSync(file)).digest("hex");
+  crypto
+    .createHash("md5")
+    .update(Buffer.from(fs.readFileSync(file)))
+    .digest("hex");
 
 function withWorkbox(nextConfig = {}) {
   return {
