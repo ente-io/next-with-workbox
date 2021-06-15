@@ -85,7 +85,7 @@ function withWorkbox(nextConfig = {}) {
           ...exclude,
         ],
         modifyURLPrefix: {
-          [`${config.output.publicPath || ""}static/`]: "/_next/static/",
+          [`${config.output.publicPath || ""}autostatic/`]: "/_next/static/",
           ...modifyURLPrefix,
         },
       };

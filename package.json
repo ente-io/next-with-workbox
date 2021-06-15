@@ -1,6 +1,6 @@
 {
   "name": "@ente-io/next-with-workbox",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Higher order Next.js configuration for generating a service worker",
   "main": "index.js",
   "private": false,
