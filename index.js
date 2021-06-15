@@ -1,12 +1,13 @@
 const path = require("path");
 const crypto = require("crypto");
+const fs = require("fs");
 
 const glob = require("glob");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const WorkboxPlugin = require("workbox-webpack-plugin");
 
 const getRevision = (file) =>
-  crypto.createHash("md5").update(Buffer.from(file)).digest("hex");
+  crypto.createHash("md5").update(Buffer.from(fs.readFileSync(file)).digest("hex");
 
 function withWorkbox(nextConfig = {}) {
   return {
