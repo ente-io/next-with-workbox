@@ -1,6 +1,6 @@
 {
-  "name": "next-with-workbox",
-  "version": "2.0.1",
+  "name": "@ente-io/next-with-workbox",
+  "version": "1.0.0",
   "description": "Higher order Next.js configuration for generating a service worker",
   "main": "index.js",
   "private": false,
@@ -35,11 +35,7 @@
     "service-worker",
     "webpack"
   ],
-  "author": {
-    "name": "Cansin Yildiz",
-    "email": "cansinyildiz@gmail.com",
-    "url": "https://www.cansinyildiz.com/"
-  },
+  "author": "Cansin Yildiz <cansinyildiz@gmail.com> (https://www.cansinyildiz.com/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/cansin/next-with-workbox/issues"
